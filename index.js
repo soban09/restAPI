@@ -10,7 +10,7 @@ app.use('/users', routerRoutes)
 
 app.get('/', (req, res) => {
     console.log('Hello') 
-    res.send('Hello son whats up')
+    res.sendFile('./index.html')
 })
 
 app.listen(PORT, () => console.log(`Server is running on port : ${PORT}`))
